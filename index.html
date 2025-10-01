@@ -12,13 +12,14 @@
 
 <body>
 
-  <!-- Header -->
-  <header>
+  <!-- Header / Navigation -->
+  <header class="header">
     <div class="logo">
-      <h1>GreenHomes</h1>
+      <h2>GreenHomes</h2>
     </div>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
     <nav>
-      <ul>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
@@ -29,64 +30,67 @@
 
   <!-- Home Content -->
   <section class="hero">
-    <h3>welcome to GreenHomes</h3>
+    <h3>Welcome to GreenHomes</h3>
     <h2>Find Your Dream Home</h2>
     <p>We help you find the perfect property with ease.</p>
   </section>
-  <h2>Our live projects</h2>
-  <div class="container">
-    <div class="image-box">
-      <img src="images/morden-villa-home.jpg" alt="Sample Image">
-    </div>
 
-    <!-- Text Section -->
-    <div class="text-box">
-      <h2>Premium Apartment in bangalore</h2>
-      <p>
-        This is a simple nhhsjsjjsjs kkksksk ksmsmnexample of placing an image and text side by side
-        using CSS Flexbox. The layout is responsive, so it adjusts
-        automatically based on screen size.
-      </p>
-      <div class="button-group">
-        <button onclick="window.location.href='contact.html'" class="btn btn-booking">Booking</button>
-        <button onclick="window.location.href='services.html'" class="btn btn-explore">Explore More</button>
-
+  <!-- Apartment Features Section -->
+  <section class="apartments">
+    <h2>Apartments for Sale in Chennai</h2>
+    <div class="container">
+      <div class="image-box">
+        <img src="images/morden-villa-home.jpg" alt="Sample Image">
       </div>
-    </div>
-  </div>
-
-  
-  <section class="blog-section">
-    <h1>Latest Blog Posts</h1>
-    <div class="blog-container">
-      
-      <div class="blog-post">
-        <img src="images/greenhomes.jpg" alt="Modern Villa">
-        <h2>Top 5 Tips for Buying Your First Home</h2>
-        <p>Buying a home can be stressful. Here are 5 simple tips to make your first purchase easy...</p>
-        <a href="#" class="read-more">Read More</a>
+      <div class="text-box">
+        <h2>Premium Apartment in Bangalore</h2>
+        <p>
+          This is a simple example of placing an image and text side by side
+          using CSS Flexbox. The layout is responsive, so it adjusts automatically based on screen size.
+        </p>
+        <div class="button-group">
+          <button onclick="window.location.href='contact.html'" class="btn btn-booking">Booking</button>
+          <button onclick="window.location.href='services.html'" class="btn btn-explore">Explore More</button>
+        </div>
       </div>
-
-      <div class="blog-post">
-        <img src="apartment.jpg" alt="Luxury Apartment">
-        <h2>Why Invest in Real Estate in 2025?</h2>
-        <p>Real estate is still one of the safest investments. Let’s explore why it matters today...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-
-      <div class="blog-post">
-        <img src="villa.jpg" alt="Beach Villa">
-        <h2>How to Choose the Right Property for Your Family</h2>
-        <p>Choosing the right property depends on location, budget, and lifestyle. Here’s how...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-
     </div>
   </section>
+
+  <section class="features">
+  <h2>Nearby Features</h2>
+  <div class="features-container">
+    <div class="feature-box">
+      <h3>Popular Places</h3>
+      <ul>
+        <li>Marina Beach</li>
+        <li>Express Avenue Mall</li>
+        <li>Chennai Central Station</li>
+      </ul>
+    </div>
+    <div class="feature-box">
+      <h3>Hospitals</h3>
+      <ul>
+        <li>Fortis Malar Hospital</li>
+        <li>MIOT International</li>
+        <li>SRM Hospital</li>
+      </ul>
+    </div>
+    <div class="feature-box">
+      <h3>Educational Institutes</h3>
+      <ul>
+        <li>Anna University</li>
+        <li>PSG College</li>
+        <li>Chettinad School</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
   <footer>
     <p>&copy; 2025 GreenHomes. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

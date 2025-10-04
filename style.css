@@ -42,16 +42,40 @@
   cursor: pointer;
 }
 
-/* Hero Section */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.services,
+.blogs,
+.about,
+.contact {
+  background-color: #f2f2f2;
+  /* margin-top: 20px; */
+}
+
+
+/* Hero or Home Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f4f4f4;
+  background-color: hwb(0 95% 3%);
+}
+.hero h2{
+  color: #ff6600;
 }
 
 /* Apartment Section */
 .apartments {
   padding: 40px 20px;
+}
+.apartments h1{
+  color: hsl(312, 84%, 52%);
+  text-align: center;
 }
 
 .container {
@@ -135,14 +159,6 @@
 }
 
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-}
-
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-links {
@@ -171,13 +187,6 @@ footer {
 }
 
 
-.about,
-.services,
-.contact {
-  background-color: #f2f2f2;
-  /* margin-top: 20px; */
-}
-
 /* landing page or Home Or Hero section */
 .hero {
   background-image: url('images/apartments-for-sale-in-chennai1.webp');
@@ -195,7 +204,7 @@ footer {
   /* center text vertically */
   align-items: center;
   /* center text horizontally */
-  color: hsl(30, 12%, 94%);
+  color: hsl(240, 33%, 99%);
   /* text color for readability */
   text-align: center;
 }
@@ -233,7 +242,7 @@ footer {
 }
 
 .text-box h2 {
-  color: maroon;
+  color: lch(35.22% 79.59 309.54);
 }
 
 .text-box p {
@@ -270,68 +279,6 @@ footer {
   opacity: 0.8;
 }
 
- .blog-section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .blog-section h1 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 40px;
-    }
-
-    .blog-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .blog-post {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 32%;
-      padding: 20px;
-      transition: 0.3s ease;
-    }
-
-    .blog-post:hover {
-      transform: translateY(-5px);
-    }
-
-    .blog-post img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .blog-post h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #222;
-    }
-
-    .blog-post p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .read-more {
-      text-decoration: none;
-      color: #fff;
-      background: #ff6600;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    .read-more:hover {
-      background: #e65c00;
-    }
 
 
 /* service page*/
@@ -341,6 +288,9 @@ footer {
   text-align: center;
   margin: 30px 0;
   color: maroon;
+}
+.services h2{
+  text-align: center;
 }
 
 .row {
@@ -397,6 +347,60 @@ footer {
   }
 }
 
+/*blogs ***************** */
+.blog-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+    .blog-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .blog-content {
+      padding: 15px;
+    }
+    .blog-content h3 {
+      margin-top: 0;
+      color: #2e8b57;
+    }
+    .blog-content p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #2e8b57;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .blog-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      .blog-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
 /*about */
 
 .about {
@@ -408,6 +412,7 @@ footer {
   background-repeat: no-repeat; /* prevents repeating */
   width: 100%;
   height: 50vh;               /* full screen height */
+  color: hwb(323 44% 16%);
 }
 
 .about h2 {
@@ -479,18 +484,9 @@ footer {
     margin: 0 0 10px 0;
   }
 }
- /* contact page*/
-/*.container2 {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-  } */
 
-  h1, h2 {
-    text-align: center;
-    color: #333;
-  }
+ /* contact page*/
+
 
   .contact-row {
     display: flex;
@@ -498,6 +494,10 @@ footer {
     gap: 20px;
     margin-bottom: 60px;
     flex-wrap: wrap;
+  }
+  .contact h1{
+    text-align: center;
+    color: #ff6600;
   }
 
   .contact-col {

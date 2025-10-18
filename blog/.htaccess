@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 /https://greenhomeschennai.netlify.app https://greenhomeschennai.vercel.app
+</IfModule>
